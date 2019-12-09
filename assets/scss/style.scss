@@ -1,0 +1,119 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-areas: "F16   F17    F18       F19    "
+  "X     egal   slash     etoile "
+  "t7    t8     t9        moins  "
+  "t4    t5     t6        plus   "
+  "t1    t2     t3        enter  "
+  "t0    t0     virgule   enter  "
+  ;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: .5fr;
+  grid-auto-rows: 1fr;
+  background-color: #fff;
+  width: calc(100vw - 10rem);
+  min-height: calc(100vh - 10rem);
+  color: #444;
+  margin: 5rem;
+
+}
+
+.key {
+  display: grid;
+  background-color: rgb(243, 243, 243);
+  //border: 1.2px solid black;
+  border-radius: 8px;
+  box-shadow: 
+    -1px 2px 10px 0px #8005, 
+    4px 2px 10px 0px #0385;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 18px;
+  //font-size:150%;
+}
+
+.key:hover {
+border: 1px solid #eeeeee;
+font-size: 150%;
+}
+
+.key:active {
+border: 1px solid #eeeeee;
+width: 95%;
+height: 95%;
+}
+
+.F16 {
+  grid-area: F16;
+}
+.F17 {
+  grid-area: F17;
+}
+.F18 {
+  grid-area: F18;
+}
+.F19 {
+  grid-area: F19;
+}
+.X {
+  grid-area: X;
+}
+.egal {
+  grid-area: egal;
+}
+.slash {
+  grid-area: slash;
+}
+.etoile {
+  grid-area: etoile;
+}
+.t7 {
+  grid-area: t7;
+}
+.t8 {
+  grid-area: t8;
+}
+.t9 {
+  grid-area: t9;
+}
+.moins {
+  grid-area: moins;
+}
+.t4 {
+  grid-area: t4;
+}
+.t5 {
+  grid-area: t5;
+}
+.t6 {
+  grid-area: t6;
+}
+.plus {
+  grid-area: plus;
+}
+.t1 {
+  grid-area: t1;
+}
+.t2 {
+  grid-area: t2;
+}
+.t3 {
+  grid-area: t3;
+}
+.enter {
+  grid-area: enter;
+}
+.t0 {
+  grid-area: t0;
+}
+.virgule {
+  grid-area: virgule;
+}

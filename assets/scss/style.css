@@ -1,0 +1,185 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+      grid-template-areas: "F16   F17    F18       F19    " "X     egal   slash     etoile " "t7    t8     t9        moins  " "t4    t5     t6        plus   " "t1    t2     t3        enter  " "t0    t0     virgule   enter  ";
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: .5fr;
+      grid-template-rows: .5fr;
+  grid-auto-rows: 1fr;
+  background-color: #fff;
+  width: calc(100vw - 10rem);
+  min-height: calc(100vh - 10rem);
+  color: #444;
+  margin: 5rem;
+}
+
+.key {
+  display: -ms-grid;
+  display: grid;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  -webkit-box-shadow: -1px 2px 10px 0px #8005,  4px 2px 10px 0px #0385;
+          box-shadow: -1px 2px 10px 0px #8005,  4px 2px 10px 0px #0385;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.key:hover {
+  border: 1px solid #eeeeee;
+  font-size: 150%;
+}
+
+.key:active {
+  border: 1px solid #eeeeee;
+  width: 95%;
+  height: 95%;
+}
+
+.F16 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: F16;
+}
+
+.F17 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: F17;
+}
+
+.F18 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: F18;
+}
+
+.F19 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: F19;
+}
+
+.X {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: X;
+}
+
+.egal {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: egal;
+}
+
+.slash {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: slash;
+}
+
+.etoile {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: etoile;
+}
+
+.t7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: t7;
+}
+
+.t8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: t8;
+}
+
+.t9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: t9;
+}
+
+.moins {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: moins;
+}
+
+.t4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: t4;
+}
+
+.t5 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: t5;
+}
+
+.t6 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: t6;
+}
+
+.plus {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: plus;
+}
+
+.t1 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: t1;
+}
+
+.t2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: t2;
+}
+
+.t3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: t3;
+}
+
+.enter {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: enter;
+}
+
+.t0 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: t0;
+}
+
+.virgule {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: virgule;
+}
+/*# sourceMappingURL=style.css.map */
